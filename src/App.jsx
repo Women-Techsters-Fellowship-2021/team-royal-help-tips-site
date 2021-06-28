@@ -1,22 +1,43 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
-import Home from './pages/Home';
-import Test from './pages/ExamplePage';
+import StateProvider from "./components/StateProvider";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+
+// Style import
+import "./css/App.css";
+
+
+// Font awesome import
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+
+// Pages
+import Notes from "./pages/Notes";
+import UserNote from "./pages/UserNote";
+
+library.add(fas);
 
 function App() {
-	return (
-		<Router>
-			<Navbar />
-			<Switch>
-				<Route exact path="/">
-					<Home />
-				</Route>
-				<Route path="/test-page">
-					<Test />
-				</Route>
-			</Switch>
-		</Router>
-	);
+  return (
+    <StateProvider>
+      <Router>
+        <ScrollToTop />
+          <Switch>
+              <Route exact path="/">
+                <UserNote />  
+              </Route> 
+              <Route path="/notes">
+                <Notes />  
+              </Route>
+           
+          </Switch>
+      </Router>
+    </StateProvider>
+  );
 }
 
 export default App;
