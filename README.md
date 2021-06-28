@@ -1,9 +1,9 @@
 
-# Software Development Notes
+# Software Development Survival Site (SDSS)
 
 Have you learned something new you wish to share? You are at the right place. 
 Quickly write what you have learned here. 
-Software Development Notes is a survival pack for new software developers looking to get tips 
+SDSS is a survival pack for new software developers looking to get tips 
 and share what they have learned so far. 
 
 
@@ -21,7 +21,7 @@ and share what they have learned so far.
 Contributions are always welcome!
 
 Current contributors:
-- Immaculate Nkamogeleng
+- Immaculate Nkamogeleng Matloga
 - Evelyn Anyebe
 - Remilekun Odegbami
 - Gbemisola Kotoye
