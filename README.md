@@ -1,27 +1,30 @@
-# Random Meal Suggester
 
-It is sometimes a hassle trying to decide what one should have for Breakfast, Lunch or Dinner; 
-this is an app that aims to make food selection easier by randomly selecting from user's choices to 
-avoid time wastage in selection of meals and boost user's nutritional welfare by ensuring they do not just eat junk food.
+# Software Development Notes
+
+Have you learned something new you wish to share? You are at the right place. 
+Quickly write what you have learned here. 
+Software Development Notes is a survival pack for new software developers looking to get tips 
+and share what they have learned so far. 
+
 
 ## Features
 
+- Sign in
 - Sign up
-- Login 
-- Input meal preference
-- Suggests next meal
-- Page navigation
+- Create notes
+- View notes
+- Search notes
 
-
-
+  
 ## Contributing
 
 Contributions are always welcome!
 
 Current contributors:
+- Immaculate Nkamogeleng
+- Evelyn Anyebe
+- Remilekun Odegbami
+- Gbemisola Kotoye
+- Vivian Nzekwe
+- Kindness Odokara
 
-- Hafsat Ajia-Egbeyemi
-- Ivy Chepkoech
-- Zinat Sanni
-- Precious Uju
-- Ofoezie Ezichi
