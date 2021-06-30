@@ -5,6 +5,7 @@ Global Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -186,6 +187,20 @@ View note styles
 
 .note{
   background: #eeeeee;
+}
+
+/*--------------------------------------------------
+Search styles
+----------------------------------------------------*/
+#search{
+  position: relative;
+}
+#viewsearch{
+  position: relative;
+  top:10px;
+  height: 100px;
+  max-height: 200px;
+  overflow-y: scroll;
 }
 
 /*------------------------------------------------

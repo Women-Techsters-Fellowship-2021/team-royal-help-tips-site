@@ -42,3 +42,23 @@ export function getUserNote(id) {
       return null;
     });
 }
+
+export function searchNote(searchValue) {
+  return fetch(`https://staging-express-api.herokuapp.com/notes/search/${searchValue}`, {
+    method: "GET",
+    headers: {
+      "Content-type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((result) =>{
+      if(result){
+        return result.data;
+      }
+      return [];
+    } )
+    .catch((err) => {
+      console.log(err);
+      return [];
+    });
+}
