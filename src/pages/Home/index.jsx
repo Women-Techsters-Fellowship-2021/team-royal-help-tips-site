@@ -7,4 +7,4 @@ function Home() {
 	return <div className="home">This is the home Page.</div>;
 }
 
-export default Home;
+//export default Home;

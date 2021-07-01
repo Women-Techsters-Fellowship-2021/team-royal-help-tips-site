@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
-import Home from './pages/Home';
-import Test from './pages/ExamplePage';
+//import Navbar from './components/navbar';
+import Landing from './pages/Landing';
+import 'App.css';
+//import Test from './pages/ExamplePage';
 
 function App() {
 	return (
 		<Router>
-			<Navbar />
 			<Switch>
 				<Route exact path="/">
-					<Home />
+					<Landing />
 				</Route>
-				<Route path="/test-page">
+			    {/*<Route path="/test-page">
 					<Test />
-				</Route>
+					</Route>*/}
 			</Switch>
 		</Router>
 	);
