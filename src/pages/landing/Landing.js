@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import Navbar from '../components/navbar';
+import Navbar from './navbar';
 //import 'App.css';
 
 function Landing() {
