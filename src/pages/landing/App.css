@@ -7,14 +7,14 @@ Global Styles
   box-sizing: border-box;
 }
 
-/* main {
+main {
   position: relative;
   top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}
 
 p {
   font-size: calc(10px + 2vmin);
@@ -64,7 +64,7 @@ Icon ans Spinner styles
 
 /*Landing page*/
 .bg-banner {
-    background-image: url('/images/notes.jpeg');
+    background-image: url('../../images/notes.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

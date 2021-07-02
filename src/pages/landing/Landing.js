@@ -1,11 +1,11 @@
 import {Link} from 'react-router-dom';
-import Navbar from './navbar';
-//import 'App.css';
+// import Navbar from './navbar';
+import './App.css';
 
 function Landing() {
     return(
 	<div className='bg-banner'>
-	    <Navbar />
+	    {/* <Navbar /> */}
 	    <div className='land-container'>
 		<p className='text-center land-intro'>EASY LEARNING WITH OUR NOTES</p>
 		<div className='btn-container'>

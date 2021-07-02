@@ -25,12 +25,12 @@ function App() {
 			<Router>
 				<ScrollToTop />
 				<Switch>
-					<Route exact path="/landing">
-						<Landing />
+					<Route exact path="/notyet">
+						<Home />
 					</Route>
 					<Layout>
 						<Route exact path="/">
-							<Home />
+							<Landing />
 						</Route>
 						<Route exact path="/user/notes">
 							<UserNote />
