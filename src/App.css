@@ -64,7 +64,7 @@ Icon ans Spinner styles
 
 /*Landing page*/
 .bg-banner {
-    background-image: url('/images/notes.jpeg');
+    background-image: url('./images/notes.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
