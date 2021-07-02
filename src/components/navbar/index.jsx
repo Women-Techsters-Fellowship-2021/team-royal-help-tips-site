@@ -1,34 +1,31 @@
 import { Link } from 'react-router-dom';
 import './navstyle.css';
 import logo from '../../images/logo.PNG';
+import SearchNote from '../notes/searchNote';
 
 function Navbar() {
 	return (
 		<nav>
 			
 			<img src={logo} alt="logo" id="logo"></img>
-			
-			<ul>
-				<li>
-					<Link to="/">Search</Link>
-				</li>
-			</ul>
+
+			<SearchNote />
 			<ul>
 				<li>
 					<Link to="/">Home</Link>
 				</li>
 				<li>
-					<Link to="/">About</Link>
+					<Link to="/about">About</Link>
 				</li>
 				<li>
-					<Link to="/">Contact</Link>
+					<Link to="/contact">Contact</Link>
 				</li>
-				<li>
+				{/* <li>
 					<Link to="/">Signup</Link>
 				</li>
 				<li>
 					<Link to="/">Login</Link>
-				</li>
+				</li> */}
 				<li>
 					<Link to="/notes">Notes</Link>
 				</li>

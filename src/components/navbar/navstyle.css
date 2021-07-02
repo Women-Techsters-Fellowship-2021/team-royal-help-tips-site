@@ -1,6 +1,5 @@
 nav {
-	background: rgb(9, 71, 100);
-	color: white;
+	background-color: #ffffff;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -8,7 +7,8 @@ nav {
 	margin-top: 0;
 	height: auto;
 	box-sizing: border-box;
-	width: 100%;
+	min-width: 100%;
+	position: fixed;
 }
 
 #logo{
@@ -22,6 +22,7 @@ ul {
 	align-items: center;
 	padding: 5px 0px;
 	margin: 0px;
+	color: rgb(34, 33, 33);
 }
 
 
@@ -29,18 +30,18 @@ li {
 	list-style-type: none;
 	padding: 20px;
 	margin: 0px;
+	display: block;
+	color: rgb(34, 33, 33);
 }
 
-a {
-	display: block;
-	color: white;
-}
+
+
 
 /*------------------------------------------------
 Mobile screen
 ---------------------------------------------------*/
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 360px) {
 	nav {
 		flex-direction: column;
 		align-items: center;

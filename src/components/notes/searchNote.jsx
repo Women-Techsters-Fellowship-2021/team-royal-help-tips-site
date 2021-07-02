@@ -3,6 +3,7 @@ import { useState, useRef } from 'react';
 import { searchNote } from '../../store/utils/NotesFromDb';
 import { toTitleCase } from '../../store/utils/utils';
 import userIcon from '../../images/user-icon.png';
+import '../styles/searchNote.css'
 // import Spinner from '../spinner';
 
 const SearchNote = ({ url }) => {
@@ -48,14 +49,14 @@ const SearchNote = ({ url }) => {
 								className="form-control"
 								placeholder="Title or topic"
 								aria-label="Title or topic"
-								aria-describedby="searcn-btn"
+								aria-describedby="search-btn"
 								onBlur={handleSearch}
 								ref={searchRef}
 							/>
 							<div className="input-group-append">
 								<button
 								type="button"
-									className="btn btn-info input-group-text"
+									className=" input-group-text"
 									id="search_btn"
 									onClick={handleSearch}
 								>

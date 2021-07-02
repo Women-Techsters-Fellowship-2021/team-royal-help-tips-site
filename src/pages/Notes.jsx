@@ -27,14 +27,14 @@ function Notes() {
 				<Route path={match.path}>
 					<div>
 						<Link
-							className="btn btn-info btn-lg my-4 mx-2"
-							to="/"
+							className="btn btn-lg my-4 mx-2"
+							to="/user/notes"
 							role="button"
 						>
 							Add Notes
 						</Link>
 						<Link
-							className="btn btn-info btn-lg my-4 mx-2"
+							className="btn btn-lg my-4 mx-2"
 							to="/notes"
 							role="button"
 						>

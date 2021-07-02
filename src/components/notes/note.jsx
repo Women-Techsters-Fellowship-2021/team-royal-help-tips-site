@@ -4,6 +4,7 @@ import { getFirst50words, toTitleCase } from "../../store/utils/utils";
 import userIcon from "../../images/user-icon.png";
 import { getSingelNote } from "../../store/utils/NotesFromDb";
 import Spinner from "../spinner";
+import "../styles/notes.css"
 
 const Note = () => {
   let {noteId} = useParams();
@@ -19,7 +20,7 @@ const Note = () => {
     return () => clearTimeout(timer);
   }, [classNote, noteId]);
   return (
-    <div className="container">
+    <div className="note-container">
       {!classNote && (
         <Spinner />
       )}

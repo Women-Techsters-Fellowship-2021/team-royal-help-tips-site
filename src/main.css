@@ -1,23 +1,69 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+} */
 
 html{
-	scroll-behavior: smooth;
+	scroll-behavior: smooth; 
 }
 
-body {
+/* body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-		'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+} */
+
+/* code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	monospace;
+} */
+
+body{
+	background-color: #edf3f3;
+	/* font-family:Gilory-Medium; */
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+#preloader{
+    margin: 2em;
+    font-size: 2em;
 }
+
+
+.notes-container{
+	min-height: 80vh;
+	max-height: 85vh;
+}
+
+.container{
+    max-width: 400px;
+    min-width: 400px;
+	text-align: center;
+    
+}
+
+
+.welcome{
+    color: white;
+}
+
+
+.back-btn{
+    position: relative;
+    left: 40%;
+}
+
+.btn {
+    background-color: #c3d8f5;
+    font-size: 1.4em;
+	max-width: inherit;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+	box-shadow: 3px 5px 5px rgb(27, 63, 63);
+	transform: translate(-2%, -2%);
+    
+}
+
