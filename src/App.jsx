@@ -1,10 +1,19 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css';
+// import './App.css';
+import StateProvider from "./components/StateProvider";
+import ScrollToTop from "./components/ScrollToTop";
+
+// Style import
+import "./css/App.css";
+
 
 
 import Layout from './layouts/layout';
 import Landing from './pages/Landing';
 import Home from './pages/Home/index';
+// Pages
+import Notes from "./pages/Notes";
+import UserNote from "./pages/UserNote";
 //import Test from './pages/ExamplePage';
 
 // Font awesome import
@@ -14,7 +23,9 @@ library.add(fas);
 
 function App() {
 	return (
+     <StateProvider>
 		<Router>
+     <ScrollToTop />
 			<Switch>
 				<Route exact path="/landing">
 					<Landing />
@@ -23,9 +34,16 @@ function App() {
 			    <Route path="/">
 					<Home />
 				</Route>
+    <Route exact path="/">
+                <UserNote />  
+              </Route> 
+              <Route path="/notes">
+                <Notes />  
+              </Route>
 				</Layout>
 			</Switch>
 		</Router>
+     </StateProvider>
 	);
 }
 
