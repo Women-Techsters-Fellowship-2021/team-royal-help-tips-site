@@ -1,19 +1,16 @@
-.add-note-fields {
-    border-radius: 10px;
+#add-note-form select,
+#add-note-form input,
+#add-note-form textarea {
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 400;
     outline: none;
-    background-color: red;
+    border: 1px solid #8bb4e0;
+    border-radius: 5px;
+    resize: none;
 }
-.add-note-fields:hover{
-    border: 2px solid #077784;
-    border-radius: 10px;
-    background-color: #fff;
-}
-
-#topic, #title, #note {
-    min-width: 100%;
-    max-width: 100%;
-}
-
 
 .note-avatar{
     height: 50px;
@@ -32,14 +29,14 @@
 }
 
 #note-title{
-    color: #777877;
+    color: #193c5a;
     font-size: 1.5em;
 }
 
 .btn-add-note{
     margin: 0 auto;
     position: relative;
-    left: 48%;
+    left: 30%;
 }
 
 .btn-add-note:nth-child(2){

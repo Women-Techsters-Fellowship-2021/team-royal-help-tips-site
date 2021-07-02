@@ -61,7 +61,7 @@ const AddNote = ({ addNote, alertMessage, editNote, noteToEdit, cancel }) => {
   }, [noteToEdit]);
 
   return (
-   <div className="add-note-container">
+   <div className="add-note-container" id="add-note-form">
       <h4 id="note-title">Would you like to share what you learnt? Add it!</h4>
       {alertMessage.message ? (
         <Alert variant={alertMessage.variant}>{alertMessage.message}</Alert>

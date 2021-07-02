@@ -12,6 +12,8 @@ import Home from './pages/Home/index';
 // Pages
 import Notes from './pages/Notes';
 import UserNote from './pages/UserNote';
+import Contact from './pages/Contact';
+import About from './pages/About';
 //import Test from './pages/ExamplePage';
 
 // Font awesome import
@@ -37,6 +39,12 @@ function App() {
 						</Route>
 						<Route exact path="/notes">
 							<Notes />
+						</Route>
+						<Route exact path="/contact">
+							<Contact />
+						</Route>
+						<Route exact path="/about">
+							<About />
 						</Route>
 					</Layout>
 				</Switch>

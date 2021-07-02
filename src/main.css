@@ -1,23 +1,14 @@
-/* * {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-} */
+}
 
 html{
 	scroll-behavior: smooth; 
 }
 
-/* body {
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-} */
 
-/* code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-	monospace;
-} */
 
 body{
 	background-color: #edf3f3;
@@ -58,10 +49,14 @@ body{
     background-color: #c3d8f5;
     font-size: 1.4em;
 	max-width: inherit;
+	cursor: pointer;
+	letter-spacing: 2px;
     transition: all 0.3s;
+	border: none;
 }
 
 .btn:hover{
+	color: white;
 	box-shadow: 3px 5px 5px rgb(27, 63, 63);
 	transform: translate(-2%, -2%);
     
