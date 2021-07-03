@@ -14,6 +14,7 @@ import Notes from './pages/Notes/Notes';
 import UserNote from './pages/Notes/UserNote';
 import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
+import Gallery from './pages/Gallery/Gallery';
 //import Test from './pages/ExamplePage';
 
 // Font awesome import

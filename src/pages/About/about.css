@@ -1,7 +1,5 @@
 .about{
-     /* background-color: #edf3f3; */
      max-width: 80%;
-     /* border: 2px solid #ccc; */
      font-weight: 300;
      margin: 80px 15px;
      padding: 30px;
@@ -21,7 +19,9 @@ color: #193c5a;
 
 .about-btn{
     position: relative;
-    left: 40px;
+    left: 40%;
+    top: 50px;
+    font-size: 1.5em;
 }
 
 .sub-about{
