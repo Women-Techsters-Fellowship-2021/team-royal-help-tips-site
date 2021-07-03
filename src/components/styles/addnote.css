@@ -1,0 +1,44 @@
+#add-note-form select,
+#add-note-form input,
+#add-note-form textarea {
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #8bb4e0;
+    border-radius: 5px;
+    resize: none;
+}
+
+.note-avatar{
+    height: 50px;
+    width: 50px;
+}
+
+.note-date{
+    position: relative;
+    top: 15px;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0px 20px 0px;
+}
+
+#note-title{
+    color: #193c5a;
+    font-size: 1.5em;
+}
+
+.btn-add-note{
+    margin: 0 auto;
+    position: relative;
+    left: 30%;
+}
+
+.btn-add-note:nth-child(2){
+    margin-left: 20px;
+}

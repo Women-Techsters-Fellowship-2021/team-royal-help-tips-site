@@ -98,11 +98,7 @@ const UserNote = () => {
   };
   return (
     <main>
-      <div>
-          <Link className="btn btn-info btn-lg my-4" to="/notes" role="button">
-           view Notes
-          </Link>
-        </div>
+      
       <div className="notes-container">
         <AddNote
           addNote={addNote}
@@ -111,7 +107,7 @@ const UserNote = () => {
           noteToEdit={noteToEdit}
           cancel={cancel}
         />
-        <div className="note-list">
+        {/* <div className="note-list">
           <div className="mb-5 pb-2">
             <ViewNote
               notes={userNotes}
@@ -120,7 +116,7 @@ const UserNote = () => {
               handleEdit={handleEdit}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );
