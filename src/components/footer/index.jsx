@@ -10,19 +10,19 @@ const Footer = () => {
 					<img src={logo} alt="logo" id="logo"></img>
 				</div>
 				<div className="footer-links-container">
-					<h2>Thank you for visiting our website</h2>
+					<h4>Thank you for visiting our website</h4>
 
 						 
 					 <div className="footer-links">
 					<ul>
 						<li>
-							<Link>Home</Link>
+							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<Link>About</Link>
+							<Link to="/about">About</Link>
 						</li>
 						<li>
-							<Link>Contact</Link>
+							<Link to="/contact">Contact</Link>
 						</li>
 					</ul>
 

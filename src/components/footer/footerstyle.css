@@ -1,9 +1,11 @@
 footer{
-    background:#ffffff;
-	color:  rgb(53, 100, 122);
-    display: block;
+    margin: 0;
+    position: relative;
+    background:rgb(9, 71, 100);
+	color:  white;
     width: 100%;
     padding: 20px;
+    margin-bottom: 0px;
 }
 .underline{
     display: block;
@@ -46,13 +48,37 @@ footer{
 }
 
 .footer-links-container ul a{
-   font-size: 15pt;
-   color:  rgb(53, 100, 122);
+   font-size: 12pt;
+   color:  #ddd;
 }
 
 footer .copyright{
     padding: 20px;
     text-align: center;
-    color: rgb(53, 100, 122);
+    color: #ccc;
     font-size: 8pt;
+}
+
+footer .copyright h5{
+    font-size: 10pt;
+}
+
+/*------------------------------------------------
+Mobile screen
+---------------------------------------------------*/
+
+@media all and (max-width: 700px) {
+	#footer-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .footer-links-container{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+	
 }

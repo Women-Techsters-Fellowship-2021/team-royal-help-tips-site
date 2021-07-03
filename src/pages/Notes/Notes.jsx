@@ -1,11 +1,11 @@
 // import notes from "./../assets/data/notes.json";
 import { useRouteMatch, Switch, Route } from 'react-router-dom';
-import useContextGetter from '../hooks/useContextGetter';
-import { Link } from 'react-router-dom';
+import useContextGetter from '../../hooks/useContextGetter';
+// import { Link } from 'react-router-dom';
 
-import ViewNote from '../components/notes/viewNotes';
-import Note from '../components/notes/note';
-import SearchNote from '../components/notes/searchNote';
+import ViewNote from '../../components/notes/viewNotes';
+import Note from '../../components/notes/note';
+// import SearchNote from '../../components/notes/searchNote';
 
 function Notes() {
 	const {
@@ -14,9 +14,9 @@ function Notes() {
 	let match = useRouteMatch();
 
 	return (
-		<main className="mt-5">
-			<div className="container mt-5 py-2">
-				<h2 className="font-weight-bold text-center">
+		<main className="mt-3">
+			<div className="container mt-3">
+				<h2 className="font-weight-bold">
 					Welcome {userData.email}
 				</h2>
 			</div>
@@ -25,7 +25,7 @@ function Notes() {
 					<Note />
 				</Route>
 				<Route path={match.path}>
-					<div>
+					{/* <div>
 						<Link
 							className="btn btn-lg my-4 mx-2"
 							to="/user/notes"
@@ -40,13 +40,13 @@ function Notes() {
 						>
 							View Notes
 						</Link>
-					</div>
-					<div>
+					</div> */}
+					{/* <div>
 						<SearchNote url={match.url} />
-					</div>
+					</div> */}
 
 					<div className="my-2"></div>
-					<ViewNote notes={notes} url={match.url} />
+					<ViewNote notes={notes} url={match.url} loggedUser={userData}/>
 				</Route>
 			</Switch>
 		</main>

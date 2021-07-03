@@ -1,29 +1,19 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import topics from "./../../store/data/topics.json";
 import Select from "react-select";
 import { useForm } from "react-hook-form";
 import { countWords } from "../../store/utils/utils";
 import { Alert } from "react-bootstrap";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
-import "../styles/addnote.css"
+// import { Link } from "react-router-dom";
+import "./addnote.css"
 
-const AddNote = ({ addNote, alertMessage, editNote, noteToEdit, cancel }) => {
-  const editFormRef = useRef();
+const AddNote = ({ addNote, alertMessage }) => {
+ 
   const {
     register,
     handleSubmit,
     getValues,
     formState: { errors },
-  } = useForm({
-    mode: "onTouched",
-  });
-
-  const {
-    register: register1,
-    handleSubmit: handleSubmit1,
-    getValues: getValues1,
-    formState: { errors: errors1 },
   } = useForm({
     mode: "onTouched",
   });
@@ -46,20 +36,7 @@ const AddNote = ({ addNote, alertMessage, editNote, noteToEdit, cancel }) => {
     }
   };
 
-  const edit = ({ edit_note, edit_title }) => {
-    editNote({ id: noteToEdit._id, note: edit_note, title: edit_title });
-    return true;
-  };
-
-  useEffect(() => {
-    if (noteToEdit) {
-      editFormRef.current[0].value = noteToEdit.title;
-      editFormRef.current[1].value = noteToEdit.note;
-      return (editFormRef.current.style.display = "flex");
-    }
-    editFormRef.current.style.display = "none";
-  }, [noteToEdit]);
-
+ 
   return (
    <div className="add-note-container" id="add-note-form">
       <h4 id="note-title">Would you like to share what you learnt? Add it!</h4>
@@ -107,92 +84,13 @@ const AddNote = ({ addNote, alertMessage, editNote, noteToEdit, cancel }) => {
         <p className="text-danger">
           {errors.note && <small>Your note cannot be less than 20 words</small>}
         </p>
-         <div className="mt-4">
-        <button className=" btn btn-lg btn-add-note" type="submit">
+         <div className="">
+        <button className=" btn btn-sm btn-add-note" type="submit">
           Post Note
         </button>
-          <Link className="btn btn-lg btn-add-note" to="/notes" role="button">
-           View Notes
-          </Link>
         </div>
       </form>
-      {/* <br />
-      <br />
-      <br /> */}
-      <form
-        key={2}
-        id="editform"
-        onSubmit={handleSubmit1(edit)}
-        className="container"
-        style={{
-          display: "none",
-          position: "fixed",
-          background: "red",
-          width: "100%",
-          maxWidth: "600px",
-          marginTop: "50px",
-          zIndex: 10,
-          top: "50%",
-          left: "50%",
-          right: "auto",
-          bottom: "auto",
-          marginRight: "-50%",
-          transform: "translate(-50%, -50%)",
-        }}
-        ref={editFormRef}
-      >
-        {alertMessage.message ? (
-          <Alert variant={alertMessage.variant}>{alertMessage.message}</Alert>
-        ) : (
-          ""
-        )}
-        <input
-          className="add-note-fields"
-          name="edit_title"
-          id="edit_title"
-          defaultValue={
-            editFormRef.current ? editFormRef.current[0].value : null
-          }
-          placeholder="Title"
-          {...register1("edit_title", {
-            minLength: 4,
-          })}
-        />
-        <p className="text-danger">
-          {errors1.edit_title && (
-            <small>Title must be 4 characters above</small>
-          )}
-        </p>
-        <textarea
-          id="edit_note"
-          name="edit_note"
-          placeholder="note"
-          className="add-note-fields"
-          defaultValue={
-            editFormRef.current ? editFormRef.current[1].value : null
-          }
-          {...register1("edit_note", {
-            required: true,
-            validate: () => {
-              if (countWords(getValues1("edit_note")) < 20) return false;
-              else return true;
-            },
-          })}
-        ></textarea>
-        <p className="text-danger">
-          {errors1.edit_note && (
-            <small>Your note must be more than 20 words</small>
-          )}
-        </p>
-        <div className="d-flex flex-row justfy-content-between pb-3">
-          <button className="add-note-btn" type="submit">
-            Edit Note
-          </button>
-          <button className="add-note-btn" type="button" onClick={cancel}>
-            Cancel
-          </button>
-        </div>
-      </form>
+
     </div>
   );
 };

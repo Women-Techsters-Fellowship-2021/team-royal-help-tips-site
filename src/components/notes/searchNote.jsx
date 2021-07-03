@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import { searchNote } from '../../store/utils/NotesFromDb';
 import { toTitleCase } from '../../store/utils/utils';
 import userIcon from '../../images/user-icon.png';
-import '../styles/searchNote.css'
+import './searchNote.css'
 // import Spinner from '../spinner';
 
 const SearchNote = ({ url }) => {
@@ -39,7 +39,7 @@ const SearchNote = ({ url }) => {
 		setNotes([]);
 	}
 	return (
-		<div className="container" id="search"> 
+		<div id="search"> 
 			<div className="row">
 				<div className="col-sm-12">
 					<form>
@@ -56,7 +56,7 @@ const SearchNote = ({ url }) => {
 							<div className="input-group-append">
 								<button
 								type="button"
-									className=" input-group-text"
+									className="btn input-group-text"
 									id="search_btn"
 									onClick={handleSearch}
 								>
@@ -65,8 +65,8 @@ const SearchNote = ({ url }) => {
 							</div>
 						</div>
 					</form>
-				</div>
-				<div className="col-sm-12" id="viewsearch" style={(notes.length>0)?{display:"block"}:{display:"none"}}>
+				
+				<div  id="viewsearch" style={(notes.length>0)?{display:"block"}:{display:"none"}}>
 					{(notes.length>0)? (
 						<span className="btn btn-info" onClick={handleClose}>X</span>
 					):""}
@@ -76,7 +76,7 @@ const SearchNote = ({ url }) => {
 							<div className="py-2 px-2" key={note._id}>
 								<Link
 									className="text-info"
-									to={`${url}/${note._id}`}
+									to={`/notes/${note._id}`}
 									role="button"
 									onClick={handleClose}
 								>
@@ -111,6 +111,7 @@ const SearchNote = ({ url }) => {
 						);
 					})}
 				</div>
+			</div>
 			</div>
 		</div>
 	);
