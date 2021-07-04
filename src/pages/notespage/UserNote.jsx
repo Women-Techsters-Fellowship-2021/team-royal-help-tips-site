@@ -1,7 +1,7 @@
 import { useState } from "react";
-import AddNote from "../components/notes/addnote";
-import useContextGetter from "../hooks/useContextGetter";
-import ViewNote from "../components/notes/viewNotes";
+import AddNote from "../../components/notes/addnote";
+import useContextGetter from "../../hooks/useContextGetter";
+import ViewNote from "../../components/notes/viewNotes";
 import { Link } from "react-router-dom";
 
 const UserNote = () => {

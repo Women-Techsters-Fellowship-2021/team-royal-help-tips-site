@@ -1,11 +1,11 @@
 // import notes from "./../assets/data/notes.json";
 import { useRouteMatch, Switch, Route } from 'react-router-dom';
-import useContextGetter from '../hooks/useContextGetter';
+import useContextGetter from '../../hooks/useContextGetter';
 import { Link } from 'react-router-dom';
 
-import ViewNote from '../components/notes/viewNotes';
-import Note from '../components/notes/note';
-import SearchNote from '../components/notes/searchNote';
+import ViewNote from '../../components/notes/viewNotes';
+import Note from '../../components/notes/note';
+import SearchNote from '../../components/notes/searchNote';
 
 function Notes() {
 	const {

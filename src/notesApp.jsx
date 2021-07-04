@@ -18,9 +18,6 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 // Pages
 import Notes from "./pages/notespage/Notes";
 import UserNote from "./pages/notespage/UserNote";
-import Login from "../src/pages/login/login";
-import Register from "../src/pages/login/register";
-// import loginapp from "./pages/login/loginapp"
 
 library.add(fas);
 
@@ -30,21 +27,13 @@ function App() {
       <Router>
         <ScrollToTop />
           <Switch>
-          {/* <Route exact path="/">
-                <loginapp />  
-              </Route> */}
-              <Route path="/usernote">
+              <Route exact path="/">
                 <UserNote />  
               </Route> 
               <Route path="/notes">
                 <Notes />  
               </Route>
-              <Route path="/login">
-                <Login />  
-              </Route> 
-              <Route exact path="/">
-                <Register />  
-              </Route> 
+           
           </Switch>
       </Router>
     </StateProvider>
