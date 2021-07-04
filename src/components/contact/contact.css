@@ -5,16 +5,13 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-<<<<<<< HEAD:src/components/contact/contact.css
 	padding: 30px 0px;
 	width: 100%;
 	box-sizing: border-box;
-=======
-  	padding: 30px 0px;
->>>>>>> f2d9080aec8ea51b1c87377783a50a7624a11ed9:src/pages/Contact/contact.css
 }
 
 .contact-form {
+	margin: 20px 0px;
 	background: #ffffff;
 	max-width: 800px;
 	height: 100%;

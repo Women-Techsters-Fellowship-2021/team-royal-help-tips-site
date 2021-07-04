@@ -12,32 +12,32 @@ export default function Gallery() {
 			<div className="gallery">
 			<div className="gallery-img">
 				<p className="gallery-info">Evelyn</p>
-				<img src={Evelyn} alt="Evelyn's picture" />
+				<img src={Evelyn} alt="Evelyn" />
 				<p className="gallery-email">www.evelyn.com</p>
 				</div>
 			<div className="gallery-img">
 				<p className="gallery-info">Immaculate</p>
-				<img src={Immaculate} alt="Immaculate's Picture" />
+				<img src={Immaculate} alt="Immaculate" />
 				<p className="gallery-email">www.immaculate.com</p>
 			</div>
 			<div className="gallery-img">
 				<p className="gallery-info"> Remilekun</p>
-				<img src={Remilekun} alt="Remilekun's Picture" />
+				<img src={Remilekun} alt="Remilekun" />
 				<p className="gallery-email">remdev22@gmail.com</p>
 			</div>
 				<div className="gallery-img">
 				<p className="gallery-info">Evelyn</p>
-				<img src={Evelyn} alt="Evelyn's picture" />
+				<img src={Evelyn} alt="Evelyn" />
 				<p className="gallery-email">www.evelyn.com</p>
 				</div>
 			<div className="gallery-img">
 				<p className="gallery-info">Immaculate</p>
-				<img src={Immaculate} alt="Immaculate's Picture" />
+				<img src={Immaculate} alt="Immaculate" />
 				<p className="gallery-email">www.immaculate.com</p>
 			</div>
 			<div className="gallery-img">
 				<p className="gallery-info"> Remilekun</p>
-				<img src={Remilekun} alt="Remilekun's Picture" />
+				<img src={Remilekun} alt="Remilekun" />
 				<p className="gallery-email">remdev22@gmail.com</p>
 			</div>
         </div>
