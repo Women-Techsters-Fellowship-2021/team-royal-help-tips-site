@@ -67,7 +67,6 @@ function StateProvider({ children }) {
 	useEffect(() => {
 		const timer = setTimeout(async () => {
 			const notes = await NotesFromDb();
-			console.log('State provider effect ran');
 			dispatch({
 				type: 'SET_NOTE',
 				payload: notes,
