@@ -20,12 +20,6 @@ function Navbar() {
 				<li>
 					<Link to="/contact">Contact</Link>
 				</li>
-				{/* <li>
-					<Link to="/">Signup</Link>
-				</li>
-				<li>
-					<Link to="/">Login</Link>
-				</li> */}
 				<li>
 					<Link to="/notes">Notes</Link>
 				</li>

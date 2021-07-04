@@ -316,7 +316,7 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 							)}
 							<div className="">
 								<h5 id="delete-note-text">
-									Are your sure you want to delete this note
+									Are you sure you want to delete this note?
 								</h5>
 							</div>
 

@@ -43,9 +43,7 @@ const Note = () => {
 							<h1 className="mt-5 note-title">{`${toTitleCase(
 								classNote.title,
 							)}`}</h1>
-							<p className="lead my-2">{`${getFirst50words(
-								classNote.note,
-							)} ...`}</p>
+							
 							<hr className="my-4" />
 							<p>{classNote.note}</p>
 							<div className="media">
