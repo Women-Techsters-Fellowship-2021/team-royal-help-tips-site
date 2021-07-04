@@ -10,34 +10,29 @@ const Footer = () => {
 					<img src={logo} alt="logo" id="logo"></img>
 				</div>
 				<div className="footer-links-container">
-					<h4>Quick Links</h4>
+					<h4>Thank you for visiting our website</h4>
+
+						 
+					 <div className="footer-links">
 					<ul>
 						<li>
-							<Link>Home</Link>
+							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<Link>About</Link>
+							<Link to="/about">About</Link>
 						</li>
 						<li>
-							<Link>Contact</Link>
+							<Link to="/contact">Contact</Link>
 						</li>
 					</ul>
+
+					</div>
 				</div>
-				<div className="footer-links-container">
-					<h4>Get Started</h4>
-					<ul>
-						<li>
-							<Link>Login</Link>
-						</li>
-						<li>
-							<Link>Signup</Link>
-						</li>
-					</ul>
-				</div>
+				
 			</div>
 			<div className="underline"></div>
 			<div className="copyright">
-				&copy; Women Techsters 2021 SWD Track Team Royal
+				<h5>&copy; Women Techsters 2021 SWD Track Team Royal</h5>
 			</div>
 		</footer>
 	);

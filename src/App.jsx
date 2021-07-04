@@ -10,8 +10,10 @@ import Layout from './layouts/layout';
 import Landing from './pages/landing/Landing';
 import Home from './pages/Home/index';
 // Pages
-import Notes from './pages/Notes';
-import UserNote from './pages/UserNote';
+import Notes from './pages/Notes/Notes';
+import UserNote from './pages/Notes/UserNote';
+import ContactUs from './pages/Contact/Contact';
+import About from './pages/About/About';
 //import Test from './pages/ExamplePage';
 
 // Font awesome import
@@ -35,8 +37,14 @@ function App() {
 						<Route exact path="/user/notes">
 							<UserNote />
 						</Route>
-						<Route exact path="/notes">
+						<Route path="/notes">
 							<Notes />
+						</Route>
+						<Route exact path="/contact">
+							<ContactUs />
+						</Route>
+						<Route exact path="/about">
+							<About />
 						</Route>
 					</Layout>
 				</Switch>
