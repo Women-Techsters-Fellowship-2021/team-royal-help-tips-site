@@ -1,5 +1,6 @@
-import './about.css';
 import { Link } from 'react-router-dom';
+import Gallery from '../Gallery/Gallery';
+import './about.css';
 
 export default function About() {
 	return (
@@ -9,12 +10,18 @@ export default function About() {
 			<div className="about-content">
 			<h2> About This Project</h2>
 			<p>
-				Have you learned something new you wish to share? You are at the
-				right place. Quickly write what you have learned here. SDSS is a
+				Have you learnt something new you wish to share? You are at the
+				right place. Quickly write what you have learnt here. SDSS is a
 				survival pack for new software developers looking to get tips
 				and share what they have learned so far.
 			</p>
+<<<<<<< HEAD
 			
+=======
+			<p>
+				This project is a Microsoft Womentechsters mini-project. Below is the images of our project contributors. You can fill the contact us form or reach out to us via email and we will get back to you as soon as we can.
+			</p>
+>>>>>>> f2d9080aec8ea51b1c87377783a50a7624a11ed9
 
 			{/* <div className="sub-about">
 				<div className="sub">
@@ -32,6 +39,11 @@ export default function About() {
 					<p>Happy Subscribers</p>
 				</div>
 			</div> */}
+<<<<<<< HEAD
+=======
+
+				<Gallery />
+>>>>>>> f2d9080aec8ea51b1c87377783a50a7624a11ed9
 
 			<div className="about-btn">
 				<Link

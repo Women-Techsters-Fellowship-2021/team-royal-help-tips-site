@@ -61,16 +61,7 @@ const UserNote = () => {
           addNote={addNote}
           alertMessage={alertMessage}
         />
-        {/* <div className="note-list">
-          <div className="mb-5 pb-2">
-            <ViewNote
-              notes={userNotes}
-              url="/notes"
-              edit={true}
-              handleEdit={handleEdit}
-            />
-          </div>
-        </div> */}
+        
       </div>
     </main>
   );
