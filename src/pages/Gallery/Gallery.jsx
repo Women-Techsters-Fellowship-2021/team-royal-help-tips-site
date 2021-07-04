@@ -31,7 +31,7 @@ export default function Gallery() {
 				<div className="gallery-img">
 					<p className="gallery-info">Kindness Odokara</p>
 					<img src={Kindness} alt="Kindness" />
-					<p className="gallery-email">kindness.odokara@womentechsters.org</p>
+					<p className="gallery-email">kindness866@gmail.com</p>
 				</div>
 				<div className="gallery-img">
 					<p className="gallery-info"> Remilekun Odegbami</p>
