@@ -1,0 +1,40 @@
+.wrapper{
+    background-color: #ffffff;
+    /* box-shadow: 0 5px 25px #246094; */
+    
+}
+
+.wrapper h1{
+    margin: 0px 0px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-img img{
+	width: 250px;
+	height: 250px;
+    padding: 0 20px 20px;
+
+}
+
+
+.gallery-email {
+    text-align: center;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.gallery-info {
+    text-align: center;
+    font-weight: 400;
+}
