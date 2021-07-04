@@ -85,7 +85,7 @@ const AddNote = ({ addNote, alertMessage }) => {
           {errors.note && <small>Your note cannot be less than 20 words</small>}
         </p>
          <div className="">
-        <button className=" btn btn-sm btn-add-note" type="submit">
+        <button className=" btn btn-sm btn-post-note" type="submit">
           Post Note
         </button>
         </div>
