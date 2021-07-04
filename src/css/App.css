@@ -5,7 +5,6 @@ Global Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 main {
@@ -18,16 +17,18 @@ main {
 }
 
 p {
-  font-size: calc(10px + 2vmin);
+  font-size: 12pt;
 }
 a {
-  color: #077784;
+  text-decoration: none;
+  color:rgb(9, 71, 100);
 }
 
-a,
 a:hover {
+  color: #f26627;
   text-decoration: none;
 }
+
 img {
   object-fit: cover;
 }
@@ -45,7 +46,7 @@ Icon ans Spinner styles
 ----------------------------------------------*/
 .icon {
   font-size: 1.9em;
-  color: #077784;
+  color: #f26627;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -66,88 +67,6 @@ Icon ans Spinner styles
 /*-------------------------------------------------
 Add Note styles
 --------------------------------------------------*/
-.notes-container {
-  position: relative;
-  top: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 900px;
-  padding: 20px 20px;
-  font-weight: 300;
-}
-
-.notes-container .underline {
-  display: block;
-}
-#note-title{
-  font-weight: 600;
-  text-align: left;
-}
-
-.add-note-container {
-  position: relative;
-  top:0;
-  left: 0;
-  margin: 10px 0px auto;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.add-note-container > form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.add-note-container > form > textarea {
-  position: relative;
-  min-height: 150px;
-  background-color: #fcfcfc;
-  outline: 0 !important;
-  border: 1px solid hsl(0, 0%, 80%);
-  border-radius: 4px;
-  color: #6a6a6a;
-  font-family: inherit;
-  font-size: inherit;
-}
-.add-note-fields {
-  margin: 2.5px 0px;
-  width: 100%;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.add-note-container > form > input {
-  position: relative;
-  min-height: 38px;
-  background-color: #ffffff;
-  outline: 0 !important;
-  border: 1px solid hsl(0, 0%, 80%);
-  border-radius: 4px;
-  color: #6a6a6a;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.add-note-btn {
-  margin: 2.5px 0px;
-  padding: 0.65rem 1.1rem;
-  font-size: inherit;
-  font-family: inherit;
-  outline: none;
-  border: 1px solid #cdcdcd;
-  color: #fcfcfc;
-  background-color: #077784;
-  border-radius: 5px;
-}
 
 /*------------------------------------------------
 View note styles
@@ -189,19 +108,6 @@ View note styles
   background: #eeeeee;
 }
 
-/*--------------------------------------------------
-Search styles
-----------------------------------------------------*/
-#search{
-  position: relative;
-}
-#viewsearch{
-  position: relative;
-  top:10px;
-  height: 100px;
-  max-height: 200px;
-  overflow-y: scroll;
-}
 
 /*------------------------------------------------
 Medium screen
