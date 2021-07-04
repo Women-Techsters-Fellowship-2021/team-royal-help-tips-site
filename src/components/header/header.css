@@ -1,12 +1,12 @@
 .header-container {
     position: relative;
-	min-height: 30vh;
+	min-height: 20vh;
     width: 100%;
     font-weight: 300;
 	margin-bottom: 20px;
 	box-sizing: border-box;
-	background: url('../../images/home-background.jpg');
-	background-position: bottom center;
+	background: url('../../images/notes.jpeg');
+	background-position: center center;
     background-attachment:fixed;
 	background-size: cover;
 	display: flex;
