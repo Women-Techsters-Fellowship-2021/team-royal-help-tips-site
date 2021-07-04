@@ -1,11 +1,12 @@
 import {Link} from 'react-router-dom';
-import Contact from '../Contact/Contact';
+import Contact from '../../components/contact/Contact';
+import About from '../About/About';
 // import Navbar from './navbar';
 import './App.css';
 
 function Landing() {
     return(
-		<>
+		<main>
 	<div className='bg-banner'>
 	    {/* <Navbar /> */}
 	    <div className='land-container'>
@@ -16,8 +17,9 @@ function Landing() {
 		</div>
 	    </div>
 	</div>
+	<About />
 	<Contact />
-	</>
+	</main>
     )
 }
 export default Landing;

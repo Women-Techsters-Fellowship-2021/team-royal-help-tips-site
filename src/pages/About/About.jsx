@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 export default function About() {
 	return (
 		<div className="about">
+			<div className="about-container">
+			<div className="overlay"></div>
+			<div className="about-content">
 			<h2> About This Project</h2>
 			<p>
 				Have you learned something new you wish to share? You are at the
@@ -11,15 +14,9 @@ export default function About() {
 				survival pack for new software developers looking to get tips
 				and share what they have learned so far.
 			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Quisquam, eligendi perspiciatis? Sit tenetur aperiam nostrum
-				optio architecto mollitia. Earum itaque maxime, dolore
-				necessitatibus quaerat vel blanditiis recusandae accusamus
-				tempore non?
-			</p>
+			
 
-			<div className="sub-about">
+			{/* <div className="sub-about">
 				<div className="sub">
 					<h1>1505</h1>
 					<p>Notes Written</p>
@@ -34,7 +31,7 @@ export default function About() {
 					<h1>87</h1>
 					<p>Happy Subscribers</p>
 				</div>
-			</div>
+			</div> */}
 
 			<div className="about-btn">
 				<Link
@@ -52,6 +49,9 @@ export default function About() {
 					Contact Us
 				</Link>
 			</div>
+			</div>
+			</div>
+			
 		</div>
 	);
 }

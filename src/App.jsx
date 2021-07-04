@@ -12,7 +12,7 @@ import Home from './pages/Home/index';
 // Pages
 import Notes from './pages/Notes/Notes';
 import UserNote from './pages/Notes/UserNote';
-import Contact from './pages/Contact/Contact';
+import ContactUs from './pages/Contact/Contact';
 import About from './pages/About/About';
 //import Test from './pages/ExamplePage';
 
@@ -41,7 +41,7 @@ function App() {
 							<Notes />
 						</Route>
 						<Route exact path="/contact">
-							<Contact />
+							<ContactUs />
 						</Route>
 						<Route exact path="/about">
 							<About />

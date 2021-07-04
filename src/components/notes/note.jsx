@@ -7,6 +7,7 @@ import { getSingelNote } from '../../store/utils/NotesFromDb';
 import Spinner from '../spinner';
 import UserNote from '../../pages/Notes/UserNote';
 import useContextGetter from '../../hooks/useContextGetter';
+
 import './notes.css';
 
 const Note = () => {

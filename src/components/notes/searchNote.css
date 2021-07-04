@@ -1,6 +1,7 @@
 #search{
     position: relative;
     width: 400px;
+    box-sizing: border-box;
 }
 
 #search form{
@@ -27,3 +28,14 @@
     width: 100%;
     padding: 10px 15px;
   }
+
+  /*------------------------------------------------
+Mobile screen
+---------------------------------------------------*/
+
+@media all and (max-width: 700px) {
+	#search{
+        width: 300px;
+	}
+	
+}

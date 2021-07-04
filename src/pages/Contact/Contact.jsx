@@ -1,51 +1,13 @@
-import './contact.css';
+import Contact from '../../components/contact/Contact';
+import Header from '../../components/header/header';
 
-export default function Contact() {
+const ContactUs = () => {
 	return (
 		<main>
-			<div className="row">
-				<div className="contact-form">
-					<h1> Leave A Message</h1>
-					<form action="#" method="post">
-						<div className="input-box">
-							<input
-								type="text"
-								name="name"
-								defaultValue=""
-								placeholder="Name"
-								required
-							/>
-						</div>
-						<div className="input-box">
-							<input
-								type="text"
-								name="email"
-								defaultValue=""
-								placeholder="Email"
-								required
-							/>
-						</div>
-						<div className="input-box">
-							<textarea
-								name="name"
-								id=""
-								cols="80"
-								rows="10"
-								placeholder="Please enter your message"
-								required
-							></textarea>
-						</div>
-						<div className="input-box">
-							<input
-								type="submit"
-								className="send-btn btn"
-								name="submit"
-								value="submit"
-							/>
-						</div>
-					</form>
-				</div>
-			</div>
+            <Header pageTitle={`Contact Us`} />
+			<Contact />	
 		</main>
 	);
-}
+};
+
+export default ContactUs;

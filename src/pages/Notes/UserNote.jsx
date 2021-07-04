@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AddNote from "../../components/notes/addnote";
 import useContextGetter from "../../hooks/useContextGetter";
-
+import Header from '../../components/header/header';
 const UserNote = () => {
   const {
     dispatch,
@@ -55,7 +55,7 @@ const UserNote = () => {
   };
   return (
     <main>
-      
+      <Header pageTitle={`Add Note`}/>
       <div className="py-3 px-3">
         <AddNote
           addNote={addNote}

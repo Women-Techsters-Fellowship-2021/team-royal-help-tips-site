@@ -1,11 +1,11 @@
 // import notes from "./../assets/data/notes.json";
 import { useRouteMatch, Switch, Route } from 'react-router-dom';
 import useContextGetter from '../../hooks/useContextGetter';
-// import { Link } from 'react-router-dom';
+
 
 import ViewNote from '../../components/notes/viewNotes';
 import Note from '../../components/notes/note';
-// import SearchNote from '../../components/notes/searchNote';
+import Header from '../../components/header/header';
 
 function Notes() {
 	const {
@@ -15,11 +15,7 @@ function Notes() {
 
 	return (
 		<main className="mt-3">
-			<div className="container mt-3">
-				<h2 className="font-weight-bold">
-					Welcome {userData.email}
-				</h2>
-			</div>
+			<Header pageTitle={`View Notes`}/>
 			<Switch>
 				<Route path={`${match.path}/:noteId`}>
 					<Note />

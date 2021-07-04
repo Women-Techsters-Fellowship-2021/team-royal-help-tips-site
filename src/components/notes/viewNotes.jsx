@@ -99,7 +99,7 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 				<p className="text-info lead">
 					Notes will be available soon!!! You can also add lessons you
 					have learnt{' '}
-					<Link to="/add/note" className="add-note">
+					<Link to="/user/notes" className="add-note">
 						here.
 					</Link>
 				</p>
