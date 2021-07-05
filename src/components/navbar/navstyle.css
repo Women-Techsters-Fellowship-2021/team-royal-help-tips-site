@@ -40,6 +40,14 @@ nav ul li a{
 	font-family: 'Roboto', cursive;
 	color: #efefef;
 }
+
+.main-nav-active{
+		font-weight: 900;
+		color: #f26627;
+		font-size: 1.2em;
+}
+
+
 a:hover{
 	font-weight: 600;
 	color: #f26627;

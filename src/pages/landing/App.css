@@ -6,6 +6,7 @@
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100vh;
+	margin-top: -30px;
 }
 
 .land-container {
@@ -62,6 +63,16 @@
 	font-weight: 600;
 	text-align: center;
 	color: #efeeee;
+}
+
+.land-paragraph{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 800;
+	color: #efeeee;
+	font-family: 'Roboto', cursive;
+	margin: 20px;
+	text-transform: capitalize;
 }
 
 /*------------------------------------------------

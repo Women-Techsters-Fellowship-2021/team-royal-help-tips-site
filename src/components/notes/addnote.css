@@ -86,10 +86,13 @@
 }
 
 .btn-add-note{
-    margin: 0 auto;
+    margin: auto 15px;
     position: relative;
 }
 
-.btn-add-note:nth-child(2){
-    margin-left: 20px;
+.btn-post-note {
+  margin: auto 2px;
+  position: relative;
+  left: 220%;
 }
+

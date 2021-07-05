@@ -1,11 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-import { getFirst50words, toTitleCase } from '../../store/utils/utils';
+import { toTitleCase } from '../../store/utils/utils';
 import userIcon from '../../images/user-icon.png';
 import { getSingelNote } from '../../store/utils/NotesFromDb';
 import Spinner from '../spinner';
-// import UserNote from '../../pages/Notes/UserNote';
 import useContextGetter from '../../hooks/useContextGetter';
 
 import './notes.css';
@@ -27,7 +26,6 @@ const Note = () => {
             note = await getSingelNote(params.noteId);
         })
       }		
-			// console.log(notes);
 			setClassNote(note);
 
 		return (noteLoaded = true);
@@ -43,9 +41,7 @@ const Note = () => {
 							<h1 className="mt-5 note-title">{`${toTitleCase(
 								classNote.title,
 							)}`}</h1>
-							<p className="lead my-2">{`${getFirst50words(
-								classNote.note,
-							)} ...`}</p>
+							
 							<hr className="my-4" />
 							<p>{classNote.note}</p>
 							<div className="media">
@@ -83,7 +79,6 @@ const Note = () => {
 					)}
 				</div>
         <div className="col-md-2">
-						{/* <UserNote /> */}
 					</div>
 			</div>
 		</div>

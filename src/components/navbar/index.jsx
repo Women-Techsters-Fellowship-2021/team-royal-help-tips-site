@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './navstyle.css';
 import logo from '../../images/logo.PNG';
 import SearchNote from '../notes/searchNote';
 
 function Navbar() {
+
+	
 	return (
 		<nav>
 			
@@ -12,25 +14,19 @@ function Navbar() {
 			<SearchNote />
 			<ul>
 				<li>
-					<Link to="/">Home</Link>
+					<NavLink exact to="/" activeClassName="main-nav-active">Home</NavLink>
 				</li>
 				<li>
-					<Link to="/about">About</Link>
+					<NavLink exact to="/about" activeClassName="main-nav-active">About</NavLink>
 				</li>
 				<li>
-					<Link to="/contact">Contact</Link>
-				</li>
-				{/* <li>
-					<Link to="/">Signup</Link>
+					<NavLink exact to="/contact" activeClassName="main-nav-active" >Contact</NavLink>
 				</li>
 				<li>
-					<Link to="/">Login</Link>
-				</li> */}
-				<li>
-					<Link to="/notes">Notes</Link>
+					<NavLink exact to="/notes" activeClassName="main-nav-active">Notes</NavLink>
 				</li>
 				<li>
-					<Link to="/user/notes">Add Notes</Link>
+					<NavLink exact to="/user/notes" activeClassName="main-nav-active">Add Notes</NavLink>
 				</li>
 			</ul>
 		</nav>
