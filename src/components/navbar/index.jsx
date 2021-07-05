@@ -1,15 +1,32 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './navstyle.css';
+import logo from '../../images/logo.PNG';
+import SearchNote from '../notes/searchNote';
 
 function Navbar() {
+
+	
 	return (
 		<nav>
+			
+			<img src={logo} alt="logo" id="logo"></img>
+
+			<SearchNote />
 			<ul>
 				<li>
-					<Link to="/">Home</Link>
+					<NavLink exact to="/" activeClassName="main-nav-active">Home</NavLink>
 				</li>
 				<li>
-					<Link to="/test-page">Test Page</Link>
+					<NavLink exact to="/about" activeClassName="main-nav-active">About</NavLink>
+				</li>
+				<li>
+					<NavLink exact to="/contact" activeClassName="main-nav-active" >Contact</NavLink>
+				</li>
+				<li>
+					<NavLink exact to="/notes" activeClassName="main-nav-active">Notes</NavLink>
+				</li>
+				<li>
+					<NavLink exact to="/user/notes" activeClassName="main-nav-active">Add Notes</NavLink>
 				</li>
 			</ul>
 		</nav>
