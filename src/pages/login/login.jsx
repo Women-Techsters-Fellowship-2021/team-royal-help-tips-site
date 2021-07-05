@@ -3,7 +3,7 @@ import "./authstyle.scss";
 
 
 import {
-  withRouter,
+  withRouter, Link
 } from "react-router-dom";
 import React from "react";
 import loginImg from "./login.svg"
@@ -35,7 +35,8 @@ export class Login extends React.Component {
         } 
       });
         console.log("User Logged in successfully!") 
-        this.props.history.push("/usernote");
+        localStorage.setItem("isLoggedIn",true);
+        this.props.history.push("/notes");
       }).catch(error => {
         this.setState({ error });
       });
@@ -67,6 +68,10 @@ export class Login extends React.Component {
           <button onClick={this.onSubmit} type="button" className="btn">
             Login
           </button>
+          <Link to="/"><button type="button" className="btn">
+            Home
+          </button>
+          </Link>
         </div>
       </div>
     );

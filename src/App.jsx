@@ -1,10 +1,22 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import StateProvider from './components/StateProvider';
+import ScrollToTop from './components/ScrollToTop';
+
+// Style import
+import './css/App.css';
+
 import Notes from './pages/Notes/Notes';
 import UserNote from './pages/Notes/UserNote';
 import ContactUs from './pages/Contact/Contact';
 import About from './pages/About/About';
-import LoginRegister from './pages/login/App';
-import Login from "../src/pages/login/login";
-import Register from "../src/pages/login/register";
+
+// import LoginRegister from './pages/login/App';
+import Login from '../src/pages/login/login';
+import Register from '../src/pages/login/register';
+
+import Layout from './layouts/layout';
+import Landing from './pages/landing/Landing';
+
 // Font awesome import
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -16,13 +28,13 @@ function App() {
 			<Router>
 				<ScrollToTop />
 				<Switch>
-					 <Route path="/login">
-                <Login />  
-              </Route> 
-              <Route exact path="/">
-                <Register />  
-              </Route> 
-					<Layout>
+						<Route path="/login">
+							<Login />
+						</Route>
+						<Route exact path="/register">
+							<Register />
+						</Route>
+						<Layout>
 						<Route exact path="/">
 							<Landing />
 						</Route>

@@ -2,7 +2,7 @@ import "./style.scss";
 import "./authstyle.scss";
 
 
-import { withRouter} from "react-router-dom";
+import { withRouter, Link} from "react-router-dom";
 import React, { Component } from "react";
 import loginImg from "./login.svg";
 import { firebaseApp } from "../../components/firebase";
@@ -11,7 +11,6 @@ export class Register extends Component {
   
   constructor(props) {
     super(props);
-
     this.state = { 
       username: '',
       email: '',
@@ -23,7 +22,6 @@ export class Register extends Component {
   }
 
   onSubmit = event => {
-
     const { email, password } = this.state;
 
     firebaseApp.auth().createUserWithEmailAndPassword(email, password).then(() => {
@@ -35,6 +33,7 @@ export class Register extends Component {
           message: ''
         } 
       });
+      // localStorage.setItem("isLoggedIn",true);
         // alert("You have registered, proceed to login!")
         this.props.history.push("/login");
       }).catch(error => {
@@ -47,6 +46,7 @@ export class Register extends Component {
   render() {
 
     return (
+      <div className="login-body">
       <div className="base-container" ref={this.props.containerRef}>
         <div className="header">Hello Developer, Welcome!</div>
         <div className="content">
@@ -74,6 +74,10 @@ export class Register extends Component {
           <button onClick={this.onSubmit} type="button" className="btn">
             Register
           </button>
+          <Link to="/"><button type="button" className="btn">
+            Home
+          </button>
+          </Link>
       </div>
       <div>
       <br>
@@ -92,7 +96,7 @@ export class Register extends Component {
         </div>
       </div>
       
-      
+      </div>
     );
   }
 }
