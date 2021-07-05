@@ -3,10 +3,8 @@ import Immaculate from '../../images/Immaculate.jpg';
 import Remilekun from '../../images/Remilekun.jpg';
 import Gbemisola from '../../images/Gbemi.jpg';
 import Vivian from '../../images/Vivian.jpg';
-import Kindness from "../../images/Kindness.jpg"
+import Kindness from "../../images/Kindness.png"
 import './gallery.css';
-
-import React from 'react';
 
 export default function Gallery() {
 	return (

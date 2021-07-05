@@ -13,7 +13,7 @@ import Notes from './pages/Notes/Notes';
 import UserNote from './pages/Notes/UserNote';
 import ContactUs from './pages/Contact/Contact';
 import About from './pages/About/About';
-
+import LoginRegister from './pages/login/App';
 // Font awesome import
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -25,10 +25,13 @@ function App() {
 			<Router>
 				<ScrollToTop />
 				<Switch>
+					<Route exact path="/login">
+						<LoginRegister />
+					</Route>
+					<Layout>
 						<Route exact path="/">
 							<Landing />
 						</Route>
-					<Layout>
 						<Route exact path="/user/notes">
 							<UserNote />
 						</Route>
