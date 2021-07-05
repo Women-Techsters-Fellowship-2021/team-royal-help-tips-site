@@ -1,11 +1,10 @@
 footer{
-    margin: 10px;
     position: relative;
     background:rgb(9, 71, 100);
 	color:  white;
     width: 100%;
     padding: 20px;
-    margin-bottom: 0px;
+    bottom: 0;
 }
 .underline{
     display: block;
