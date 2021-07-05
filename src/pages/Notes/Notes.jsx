@@ -21,26 +21,6 @@ function Notes() {
 					<Note />
 				</Route>
 				<Route path={match.path}>
-					{/* <div>
-						<Link
-							className="btn btn-lg my-4 mx-2"
-							to="/user/notes"
-							role="button"
-						>
-							Add Notes
-						</Link>
-						<Link
-							className="btn btn-lg my-4 mx-2"
-							to="/notes"
-							role="button"
-						>
-							View Notes
-						</Link>
-					</div> */}
-					{/* <div>
-						<SearchNote url={match.url} />
-					</div> */}
-
 					<div className="my-2"></div>
 					<ViewNote notes={notes} url={match.url} loggedUser={userData}/>
 				</Route>

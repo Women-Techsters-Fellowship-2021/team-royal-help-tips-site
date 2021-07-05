@@ -90,3 +90,9 @@
     position: relative;
 }
 
+.btn-post-note {
+  margin: auto 2px;
+  position: relative;
+  left: 220%;
+}
+
