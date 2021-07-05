@@ -75,6 +75,13 @@
 	text-transform: capitalize;
 }
 
+.land-que {
+	font-family: 'Roboto', cursive;
+	text-transform: capitalize;
+	color: inherit;
+	margin-top: 20px;
+}
+
 /*------------------------------------------------
 Medium screen
 ---------------------------------------------------*/

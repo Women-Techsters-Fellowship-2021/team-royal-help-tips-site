@@ -15,6 +15,8 @@ function Landing() {
 		</div>
 	    </div>
 	</div>
+
+	<h2 className="text-center land-que"> Would you like to reach out to us instead?</h2>
 	<Contact />
 	</main>
     )

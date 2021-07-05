@@ -79,6 +79,24 @@ function Navbar() {
 					<li>
 						<NavLink
 							exact
+							to="/about"
+							activeClassName="main-nav-active"
+						>
+							About
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
+							exact
+							to="/contact"
+							activeClassName="main-nav-active"
+						>
+							Contact
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
+							exact
 							to="/"
 							activeClassName="main-nav-active"
 							onClick={()=>{

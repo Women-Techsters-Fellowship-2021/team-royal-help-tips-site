@@ -19,7 +19,7 @@ export class Login extends React.Component {
       error: {
         message: ''
       }
-     };
+    };
   }
 
   onSubmit = event => {
@@ -68,8 +68,8 @@ export class Login extends React.Component {
           <button onClick={this.onSubmit} type="button" className="btn">
             Login
           </button>
-          <Link to="/"><button type="button" className="btn">
-            Home
+          <Link to="/register"><button type="button" className="btn">
+            Register
           </button>
           </Link>
         </div>

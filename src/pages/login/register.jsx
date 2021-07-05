@@ -35,7 +35,7 @@ export class Register extends Component {
       });
       // localStorage.setItem("isLoggedIn",true);
         // alert("You have registered, proceed to login!")
-        this.props.history.push("/login");
+        this.props.history.push("/notes");
       }).catch(error => {
         this.setState({ error });
       });
@@ -48,7 +48,7 @@ export class Register extends Component {
     return (
       <div className="login-body">
       <div className="base-container" ref={this.props.containerRef}>
-        <div className="header">Hello Developer, Welcome!</div>
+        <div className="header">Hello, Welcome!</div>
         <div className="content">
           <div className="image">
             <img alt="login" src={loginImg} />
@@ -74,8 +74,8 @@ export class Register extends Component {
           <button onClick={this.onSubmit} type="button" className="btn">
             Register
           </button>
-          <Link to="/"><button type="button" className="btn">
-            Home
+          <Link to="/login"><button type="button" className="btn">
+            login
           </button>
           </Link>
       </div>
