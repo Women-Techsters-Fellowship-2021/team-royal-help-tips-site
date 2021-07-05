@@ -22,10 +22,10 @@ export default function About() {
 			<div className="about-btn">
 				<Link
 					className="btn btn-lg btn-add-note"
-					to="/user/notes"
+					to="/login"
 					role="button"
 				>
-					Add Notes
+					Login
 				</Link>
 				<Link
 					className="btn btn-lg btn-add-note"

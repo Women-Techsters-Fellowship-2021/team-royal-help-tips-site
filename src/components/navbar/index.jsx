@@ -5,7 +5,6 @@ import SearchNote from '../notes/searchNote';
 
 function Navbar() {
 	const isLoggedIn = localStorage.getItem('isLoggedIn');
-
 	return (
 		<nav>
 			<img src={logo} alt="logo" id="logo"></img>
@@ -58,6 +57,15 @@ function Navbar() {
 			)}
 			{isLoggedIn && (
 				<ul>
+					<li>
+						<NavLink
+							exact
+							to="/contact"
+							activeClassName="main-nav-active"
+						>
+							Contact
+						</NavLink>
+					</li>
 					<li>
 						<NavLink
 							exact
