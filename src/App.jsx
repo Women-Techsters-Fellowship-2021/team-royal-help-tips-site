@@ -5,15 +5,18 @@ import ScrollToTop from './components/ScrollToTop';
 // Style import
 import './css/App.css';
 
-import Layout from './layouts/layout';
-import Landing from './pages/landing/Landing';
-
-// Pages
 import Notes from './pages/Notes/Notes';
 import UserNote from './pages/Notes/UserNote';
 import ContactUs from './pages/Contact/Contact';
 import About from './pages/About/About';
-import LoginRegister from './pages/login/App';
+
+// import LoginRegister from './pages/login/App';
+import Login from '../src/pages/login/login';
+import Register from '../src/pages/login/register';
+
+import Layout from './layouts/layout';
+import Landing from './pages/landing/Landing';
+
 // Font awesome import
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -25,10 +28,13 @@ function App() {
 			<Router>
 				<ScrollToTop />
 				<Switch>
-					<Route exact path="/login">
-						<LoginRegister />
-					</Route>
-					<Layout>
+						<Route path="/login">
+							<Login />
+						</Route>
+						<Route exact path="/register">
+							<Register />
+						</Route>
+						<Layout>
 						<Route exact path="/">
 							<Landing />
 						</Route>

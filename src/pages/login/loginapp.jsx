@@ -1,8 +1,8 @@
 import React from "react";
-import "./App.scss";
-import { Login, Register } from "./components/login/index";
+import "./authstyle.scss";
+import { Login, Register } from "./loginindex";
 
-class LoginRegister extends React.Component {
+class LoginApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,6 +15,7 @@ class LoginRegister extends React.Component {
     this.rightSide.classList.add("right");
   }
 
+  // to move the right and left 
   changeState() {
     const { isLogginActive } = this.state;
 
@@ -33,6 +34,7 @@ class LoginRegister extends React.Component {
     const current = isLogginActive ? "Register" : "Login";
     const currentActive = isLogginActive ? "login" : "register";
     return (
+      <div className="login-body">
       <div className="App">
         <div className="login">
           <div className="container" ref={ref => (this.container = ref)}>
@@ -50,6 +52,7 @@ class LoginRegister extends React.Component {
             onClick={this.changeState.bind(this)}
           />
         </div>
+      </div>
       </div>
     );
   }
@@ -69,4 +72,4 @@ const RightSide = props => {
   );
 };
 
-export default LoginRegister;
+export default LoginApp;
