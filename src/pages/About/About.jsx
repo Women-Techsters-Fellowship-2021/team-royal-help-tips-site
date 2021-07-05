@@ -3,6 +3,7 @@ import Gallery from '../Gallery/Gallery';
 import './about.css';
 
 export default function About() {
+	const isLoggedIn = localStorage.getItem('isLoggedIn');
 	return (
 		<div className="about">
 			<div className="about-container">
@@ -20,6 +21,7 @@ export default function About() {
 			</p>
 
 			<div className="about-btn">
+				{!isLoggedIn && (
 				<Link
 					className="btn btn-lg btn-add-note"
 					to="/login"
@@ -27,6 +29,7 @@ export default function About() {
 				>
 					Login
 				</Link>
+				)}
 				<Link
 					className="btn btn-lg btn-add-note"
 					to="/contact"

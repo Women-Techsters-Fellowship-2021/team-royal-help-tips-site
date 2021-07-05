@@ -65,10 +65,10 @@ export class Login extends React.Component {
           </div>
         </div>
         <div className="footer">
-          <button onClick={this.onSubmit} type="button" className="btn">
+          <button onClick={this.onSubmit} type="button" className="login-btn">
             Login
           </button>
-          <Link to="/"><button type="button" className="btn">
+          <Link to="/"><button type="button" className="login-btn ml-2">
             Home
           </button>
           </Link>
