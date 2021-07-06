@@ -34,10 +34,11 @@ function App() {
 						<Route exact path="/register">
 							<Register />
 						</Route>
+
+						<Layout>
 						<Route exact path="/">
 							<Landing />
 						</Route>
-						<Layout>
 						<Route exact path="/user/notes">
 							<UserNote />
 						</Route>
@@ -51,6 +52,7 @@ function App() {
 							<About />
 						</Route>
 					</Layout>
+					
 				</Switch>
 			</Router>
 		</StateProvider>

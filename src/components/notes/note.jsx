@@ -68,7 +68,7 @@ const Note = () => {
 								</div>
 							</div>
 							<button
-								className="btn btn-sm btn-info my-4 px-3"
+								className="btn btn-sm my-4 px-3"
 								onClick={() => {
 									history.goBack();
 								}}

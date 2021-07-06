@@ -10,7 +10,6 @@ function Navbar() {
 		<nav>
 			<img src={logo} alt="logo" id="logo"></img>
 
-			<SearchNote />
 			{!isLoggedIn && (
 				<ul>
 					<li>
@@ -57,6 +56,8 @@ function Navbar() {
 				</ul>
 			)}
 			{isLoggedIn && (
+				<>
+					<SearchNote />
 				<ul>
 					<li>
 						<NavLink
@@ -107,6 +108,7 @@ function Navbar() {
 						</NavLink>
 					</li>
 				</ul>
+				</>
 			)}
 		</nav>
 	);
