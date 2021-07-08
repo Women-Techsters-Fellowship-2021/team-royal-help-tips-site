@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { getFirst50words, toTitleCase } from '../../store/utils/utils';
 import userIcon from '../../images/user-icon.png';
-// import UserNote from '../../pages/Notes/UserNote';
 import useContextGetter from '../../hooks/useContextGetter';
 import { countWords } from '../../store/utils/utils';
 import { Alert, Modal } from 'react-bootstrap';
@@ -17,7 +16,7 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 		message: '',
 		variant: '',
 	});
-	const { dispatch } = useContextGetter();
+	const { state, dispatch } = useContextGetter();
 
 	const edit = e => {
 		e.preventDefault();
@@ -52,9 +51,11 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 			title: noteToEdit.title,
 			note: noteToEdit.note,
 			userid: noteToEdit.userid,
-			useremail: noteToEdit.useremail,
+			useremail: noteToEdit.useremail
+				? noteToEdit.useremail
+				: state.userData.email,
 		};
-
+		console.log(newnote);
 		fetch(`https://staging-express-api.herokuapp.com/notes`, {
 			method: 'PUT',
 			headers: {
@@ -64,6 +65,7 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 		})
 			.then(res => res.json())
 			.then(result => {
+				console.log(result.data);
 				dispatch({
 					type: 'EDIT_NOTE',
 					payload: result.data,
@@ -72,7 +74,9 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 					message: result.message,
 					variant: 'success',
 				});
-				cancel();
+				setTimeout(() => {
+					cancel();
+				}, 3000);
 			})
 			.catch(err => {
 				console.log('this error occurred', err);
@@ -99,10 +103,10 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 		setShowDeleteModal(false);
 	};
 
-	const deleteNote=(e)=>{
+	const deleteNote = e => {
 		e.preventDefault();
 		setAlertMessage({ message: 'sending request...', variant: 'info' });
-		const note={id: noteToDelete._id}
+		const note = { id: noteToDelete._id };
 
 		fetch(`https://staging-express-api.herokuapp.com/notes`, {
 			method: 'DELETE',
@@ -130,8 +134,7 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 					variant: 'danger',
 				});
 			});
-
-	}
+	};
 	const handleFormData = e => {
 		e.preventDefault();
 		setNoteToEdit(prev => ({
@@ -321,13 +324,17 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 							</div>
 
 							<div className="my-5 px-3">
-								<h2 className="title">{noteToDelete && `${toTitleCase(
-									noteToDelete.title,
-								)}`}</h2>
-								<p className="">{noteToDelete && `${getFirst50words(
-									noteToDelete.note,
-									30,
-								)}...`}</p>
+								<h2 className="title">
+									{noteToDelete &&
+										`${toTitleCase(noteToDelete.title)}`}
+								</h2>
+								<p className="">
+									{noteToDelete &&
+										`${getFirst50words(
+											noteToDelete.note,
+											30,
+										)}...`}
+								</p>
 								<div className="media">
 									<img
 										className="mr-3 note-avatar"
@@ -335,44 +342,49 @@ const ViewNote = ({ notes, url, loggedUser }) => {
 										alt="Note owner"
 									/>
 									<div className="media-body">
-										{noteToDelete && noteToDelete.hasOwnProperty('useremail') && (
-											<h6 className="mt-0 font-weight-bold">
-												<em>
-													{noteToDelete && noteToDelete.hasOwnProperty(
-														'useremail',
-													)
-														? noteToDelete.useremail
-														: ''}
-												</em>
-											</h6>
-										)}
+										{noteToDelete &&
+											noteToDelete.hasOwnProperty(
+												'useremail',
+											) && (
+												<h6 className="mt-0 font-weight-bold">
+													<em>
+														{noteToDelete &&
+														noteToDelete.hasOwnProperty(
+															'useremail',
+														)
+															? noteToDelete.useremail
+															: ''}
+													</em>
+												</h6>
+											)}
 										<small className="mt-0">
-											{noteToDelete && new Date(
-												noteToDelete.createdAt,
-											).toLocaleString()}
+											{noteToDelete &&
+												new Date(
+													noteToDelete.createdAt,
+												).toLocaleString()}
 										</small>
 									</div>
 								</div>
 
-							<div className="mt-3">
-								<button
-									className="btn btn-sm btn-add-note"
-									type="submit"
-								>
-									Delete
-								</button>
-								<button
-									className="btn btn-sm btn-add-note"
-									type="button"
-									onClick={cancelDelete}
-								>
-									Cancel
-								</button>
+								<div className="mt-3">
+									<button
+										className="btn btn-sm btn-add-note"
+										type="submit"
+									>
+										Delete
+									</button>
+									<button
+										className="btn btn-sm btn-add-note"
+										type="button"
+										onClick={cancelDelete}
+									>
+										Cancel
+									</button>
+								</div>
 							</div>
-							</div>
-							</form>
-							</div>
-							</div>			
+						</form>
+					</div>
+				</div>
 			</Modal>
 		</div>
 	);

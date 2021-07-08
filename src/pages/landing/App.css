@@ -1,12 +1,13 @@
 /*Landing page*/
 .bg-banner {
+	position: relative;
 	background-image: url('../../images/notes.jpeg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100vh;
-	margin-top: -30px;
+	margin-top: 0px;
 }
 
 .land-container {
@@ -16,6 +17,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 999;
 }
 
 .btn-container {
@@ -68,11 +70,18 @@
 .land-paragraph{
 	text-align: center;
 	font-size: 1.5em;
-	font-weight: 800;
-	color: #efeeee;
+	font-weight: 600;
+	color:aliceblue;
 	font-family: 'Roboto', cursive;
 	margin: 20px;
 	text-transform: capitalize;
+}
+
+.land-que {
+	font-family: 'Roboto', cursive;
+	text-transform: capitalize;
+	color: inherit;
+	margin-top: 20px;
 }
 
 /*------------------------------------------------

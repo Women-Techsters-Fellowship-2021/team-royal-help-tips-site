@@ -36,6 +36,7 @@
 
 .see-more {
     position: relative;
+    text-decoration: none;
 }
 
 .btn {
@@ -88,12 +89,20 @@
 
 @media all and (max-width: 700px) {
 	.container{
-        margin: 0px 20px;
+        margin: 100px auto;
         width: auto;
     }
 
     .container h2{
         margin-top: 7rem;
+    }
+
+    .note-side{
+        display: none;
+    }
+
+    .title{
+        font-size: 1.3em;
     }
 }
 

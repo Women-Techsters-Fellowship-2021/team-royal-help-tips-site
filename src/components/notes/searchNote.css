@@ -5,7 +5,7 @@
 }
 
 #search form{
-    margin-top: 22px;
+    margin-top: 20px;
 }
 
 #search form input {
@@ -18,7 +18,10 @@
     border: 1px solid #077784;
     font-size: inherit;
     font-family: 'Roboto', cursive;
-    color:#efeeee;  
+    color:#efeeee; 
+    position: relative;
+    top: -10px;
+    left: -10px; 
 }
 
 #viewsearch{

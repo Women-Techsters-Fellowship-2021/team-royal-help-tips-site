@@ -19,7 +19,7 @@ export default function Gallery() {
 				<div className="gallery-img">
 					<p className="gallery-info">Gbemisola Kotoye</p>
 					<img src={Gbemisola} alt="Gbemisola" />
-					<p className="gallery-email">gbemisola.kotoye@womentechsters.org</p>
+					<p className="gallery-email">gbemisolakotoye@gmail.com</p>
 				</div>
 				<div className="gallery-img">
 					<p className="gallery-info">Immaculate Nkamogeleng</p>

@@ -1,52 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-@import url('https://fonts.googleapis.com/css?family=Sofia');
-
-* {
-	box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 .login-body {
-	// background: #bdd5e6;
-	background-image: url('./notesimg.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
-	min-height: 100vh;
-	z-index: 990;
+	z-index: 990;	
+	font-family: 'Roboto', cursive;
+	width: 50%;
+}
+
+.login-register-option{
+	white-space: nowrap;
+	margin-bottom: 20px;
 }
 
 .base-container {
-  background-image: url('./notesimg.png');
-	width: 100%;
+	background-image: url('../../images/notes.jpeg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
+	font-family: 'Roboto', cursive;
+	
+	
 	.header {
-		margin-top: 7%;
-		color: #070707;
+		margin-top: 3%;
+		color: #ffff;
 		font-weight: bold;
-		font-size: 24px;
-		font-family: 'Sofia', sans-serif;
+		margin-bottom: 10px;
 	}
-
+	
 	.content {
 		display: flex;
 		flex-direction: column;
 		background-color: #ffffff;
-
+		margin-top: 30px;
+		min-width: 50%;
+		margin: auto;
+		
 		.image {
 			width: 21em;
+			margin-left: 40px;
 			img {
 				width: 100%;
 				height: 100%;
 			}
 		}
-
+		
 		.form {
 			margin-top: 2em;
 			display: flex;
@@ -56,7 +61,7 @@
 			padding: 0 50px;
 			height: 100%;
 			text-align: center;
-
+			
 			.form-group {
 				display: flex;
 				flex-direction: column;
@@ -71,7 +76,6 @@
 					height: 37px;
 					padding: 0px 10px;
 					font-size: 16px;
-					font-family: 'Open Sans', sans-serif;
 					background-color: #f3f3f3;
 					border: 0;
 					border-radius: 4px;
@@ -94,11 +98,11 @@
 .login-body h1 {
 	font-weight: bold;
 	margin: 0;
-	font-size: 20px;
+	font-size: 1.3em;
 	text-align: center;
 }
-.login-body p {
-	font-size: 10px;
+.login-body h2 {
+	font-size: 1.2em;
 	font-weight: 100;
 	line-height: 20px;
 	letter-spacing: 0.5px;
@@ -110,3 +114,31 @@
 	font-family: 'Sofia', sans-serif;
 	text-shadow: 3px 3px 3px #ababab;
 }
+
+// @media only screen and (max-width: 600px) {
+// 	.base-container{
+// 		background-size: fit;
+// 		background-repeat: no-repeat;
+// 		width: 100%;
+// 		text-align: center;
+// 	}
+	
+// 	.login-body{
+// 		width: 100%;
+// 		position: relative;
+// 		top: 80px;
+// 	}
+	
+// 	.header {
+// 		margin-top: 20px;
+// 	}
+// 	.register-btn{
+// 		position: relative;
+// 		top: -20px;
+// 		margin: auto;
+// 	}
+// 	.login-register-option{
+// 		white-space: nowrap;
+// 		margin-bottom: 20px;
+// 	}
+// }

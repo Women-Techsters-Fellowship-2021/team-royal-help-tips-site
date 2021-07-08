@@ -33,8 +33,6 @@ export class Register extends Component {
           message: ''
         } 
       });
-      // localStorage.setItem("isLoggedIn",true);
-        // alert("You have registered, proceed to login!")
         this.props.history.push("/login");
       }).catch(error => {
         this.setState({ error });
@@ -46,9 +44,11 @@ export class Register extends Component {
   render() {
 
     return (
-      <div className="login-body">
       <div className="base-container" ref={this.props.containerRef}>
-        <div className="header">Hello Developer, Welcome!</div>
+        <div className="header">
+        <h1>Hello, Welcome!</h1>
+          </div>
+        <div className="login-body">
         <div className="content">
           <div className="image">
             <img alt="login" src={loginImg} />
@@ -66,16 +66,17 @@ export class Register extends Component {
               <label htmlFor="password">Password</label>
               <input type="password" name="password" onChange={e => this.setState({password:  e.target.value})} placeholder="password" />
             </div>
+             <Link to ="/login" className="login-register-option"> You have an account? Login instead.</Link>
             <span style={{color: "red"}}>{this.state.error.message}</span>
           </div>
         </div>
         
       <div className="footer">
-          <button onClick={this.onSubmit} type="button" className="login-btn">
+          <button onClick={this.onSubmit} type="button" className="btn register-btn">
             Register
           </button>
-          <Link to="/"><button type="button" className="login-btn ml-2">
-            Home
+          <Link to="/"><button type="button" className="btn register-btn">
+            Back to home
           </button>
           </Link>
       </div>
@@ -88,12 +89,12 @@ export class Register extends Component {
       </br>
       </div>
       
-      <div className="message">
+      {/* <div className="message">
           <h1>We are looking forward to learning from you and vise vesa</h1>
-          <p>Please enter your details to start the journey. 
+          <h2>Please enter your details to start the journey. 
             This is to make sure the site is secure and we keep everyone accountable.
-            The details will only be used to login and track your posts.</p>
-        </div>
+            The details will only be used to login and track your posts.</h2>
+        </div> */}
       </div>
       
       </div>

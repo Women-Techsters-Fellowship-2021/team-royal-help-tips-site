@@ -31,7 +31,10 @@ function reducer(state, action) {
 	}
 
 	if (action.type === 'SET_NOTE') {
+		const user = JSON.parse(localStorage.getItem("user"));
+		console.log(user);
 		stateCopy.notes = action.payload;
+		stateCopy.userData=user;
 	}
 
 	// if action.type is ALERT_MESSAGE

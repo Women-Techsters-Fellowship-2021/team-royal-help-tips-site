@@ -16,6 +16,7 @@ import Register from '../src/pages/login/register';
 
 import Layout from './layouts/layout';
 import Landing from './pages/landing/Landing';
+import ProtectedRoute from './components/ProtectedRoute';
 
 // Font awesome import
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -28,22 +29,27 @@ function App() {
 			<Router>
 				<ScrollToTop />
 				<Switch>
-						<Route path="/login">
-							<Login />
-						</Route>
-						<Route exact path="/register">
-							<Register />
-						</Route>
-						<Layout>
+					<Route path="/login">
+						<Login />
+					</Route>
+					<Route exact path="/register">
+						<Register />
+					</Route>
+
+					<Layout>
 						<Route exact path="/">
 							<Landing />
 						</Route>
+						<ProtectedRoute>
 						<Route exact path="/user/notes">
 							<UserNote />
 						</Route>
+						</ProtectedRoute>
+						<ProtectedRoute>
 						<Route path="/notes">
 							<Notes />
 						</Route>
+						</ProtectedRoute>
 						<Route exact path="/contact">
 							<ContactUs />
 						</Route>
