@@ -13,12 +13,6 @@ const UserNote = () => {
     message: "",
     variant: "",
   });
-
-  // // Sets note to edit
-  // function handleEdit({ _id, userid, topic, title, note }){
-  //   setNoteToEdit({ _id, userid, topic, title, note });
-  // };
-
   
   const addNote = ({ topic, note, title }) => {
     setAlertMessage({ message: "sending request...", variant: "info" });

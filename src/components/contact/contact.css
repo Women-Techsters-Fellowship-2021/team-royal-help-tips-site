@@ -13,6 +13,7 @@ main {
 .contact-form {
 	margin: 20px 0px;
 	background: #ffffff;
+	width: 100%;
 	max-width: 800px;
 	height: 100%;
 	padding: 50px;
@@ -51,7 +52,7 @@ main {
 .contact-form .input-box .send-btn {
 	background-color: #c3d8f5;
 	font-size: 1.4em;
-	max-width: inherit;
+	width: 100%;
 	cursor: pointer;
 	letter-spacing: 2px;
 	transition: all 0.3s;

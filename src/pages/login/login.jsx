@@ -29,6 +29,9 @@ export class Login extends React.Component {
     const { email, password } = this.state;
 
     firebaseApp.auth().signInWithEmailAndPassword(email, password).then(() => {
+       const user= firebaseApp.auth().currentUser;
+       localStorage.setItem("user",JSON.stringify({email: user.email, id: user.uid}));
+       localStorage.setItem("isLoggedIn",true);
       this.setState({ 
         email: '',
         password: '',
@@ -36,8 +39,6 @@ export class Login extends React.Component {
           message: ''
         } 
       });
-      console.log("User Logged in successfully!") 
-      localStorage.setItem("isLoggedIn",true);
       this.props.history.push("/notes");
     }).catch(error => {
       this.setState({ error });

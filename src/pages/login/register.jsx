@@ -33,9 +33,7 @@ export class Register extends Component {
           message: ''
         } 
       });
-      // localStorage.setItem("isLoggedIn",true);
-        // alert("You have registered, proceed to login!")
-        this.props.history.push("/notes");
+        this.props.history.push("/login");
       }).catch(error => {
         this.setState({ error });
       });

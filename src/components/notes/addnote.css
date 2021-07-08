@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   
   .add-note-container > form > textarea {
@@ -85,14 +85,15 @@
     font-size: 1.5em;
 }
 
-.btn-add-note{
-    margin: auto 15px;
-    position: relative;
-}
-
 .btn-post-note {
-  margin: auto 2px;
+  margin: 2.5px 0px;
   position: relative;
-  left: 220%;
 }
 
+@media all and (max-width: 700px) {
+	.add-note-container{
+        margin-top: 100px;
+        width: 80%;
+    }
+
+  }    
