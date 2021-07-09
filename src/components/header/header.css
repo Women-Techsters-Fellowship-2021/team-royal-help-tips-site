@@ -1,13 +1,11 @@
 .header-container {
-    position: relative;
+	position: relative;
+	top:0px;
 	min-height: 20vh;
-    width: 100%;
-    font-weight: 300;
-	margin-bottom: 20px;
-	box-sizing: border-box;
+	width: 100%;
+	font-weight: 300;
 	background: url('../../images/header.PNG');
 	background-position: center center;
-    background-attachment:fixed;
 	background-size: cover;
 	display: flex;
 	justify-content: flex-start;
@@ -27,34 +25,17 @@
 	height: 100%;
 	width: 40%;
 	z-index: 992;
-    padding: 20px;
+	padding: 20px;
 }
 
 .header h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 600;
 	padding: 0px 30px;
 }
 
-
-@media all and (max-width: 400px) {
-    .header-container{
-        margin-bottom: -150px;
-		top: -200px;
-    }
-	.header-content {
-        position: relative;
-		justify-self: flex-end;
-        top: 200px;
-		text-align: center;
-		min-height: 300px;
-		width: 100%;
-		z-index: 992;
-		padding: 20px;
+@media all and (max-width: 700px) {
+	.header-container {
+		top: -20px;
 	}
 }
-
-
-
-
-

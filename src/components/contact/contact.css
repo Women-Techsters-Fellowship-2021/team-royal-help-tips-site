@@ -1,30 +1,22 @@
-main {
-	position: relative;
-	top: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 30px 0px;
-	width: 100%;
-	box-sizing: border-box;
-}
-
 .contact-form {
 	margin: 20px 0px;
+	position: relative;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	background: #ffffff;
 	width: 100%;
-	max-width: 800px;
-	height: 100%;
-	padding: 50px;
-	border-radius: 10px;
-	box-shadow: 0 5px 25px #246094;
-	
+	max-width: 600px;
+	padding: 30px 25px;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px #246094;	
 }
 
 .contact-form h1 {
 	color: #193c5a;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 600;
 	text-align: center;
 	margin-bottom: 40px;
@@ -47,22 +39,5 @@ main {
 	border: 1px solid #8bb4e0;
 	border-radius: 5px;
 	resize: none;
-}
-
-.contact-form .input-box .send-btn {
-	background-color: #c3d8f5;
-	font-size: 1.4em;
-	width: 100%;
-	cursor: pointer;
-	letter-spacing: 2px;
-	transition: all 0.3s;
-	border: 0;
-	text-transform: uppercase;
-}
-
-.contact-form .input-box .send-btn:hover {
-	color: white;
-	box-shadow: 3px 5px 5px rgb(27, 63, 63);
-	transform: none;
 }
 

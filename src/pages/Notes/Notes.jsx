@@ -14,7 +14,7 @@ function Notes() {
 	let match = useRouteMatch();
 
 	return (
-		<main className="mt-3">
+		<main>
 			<Header pageTitle={`View Notes`}/>
 			<Switch>
 				<Route path={`${match.path}/:noteId`}>

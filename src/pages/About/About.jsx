@@ -5,9 +5,10 @@ import './about.css';
 export default function About() {
 	const isLoggedIn = localStorage.getItem('isLoggedIn');
 	return (
-		<div className="about">
-			<div className="about-container">
+		<div>
+			<div className="about">
 				<div className="overlay"></div>
+
 				<div className="about-content">
 					<h2> About This Project</h2>
 					<p>
@@ -27,7 +28,7 @@ export default function About() {
 					<div className="about-btn">
 						{!isLoggedIn && (
 							<Link
-								className="btn btn-lg btn-add-note"
+								className="btn btn-lg mr-2"
 								to="/user/notes"
 								role="button"
 							>
@@ -35,7 +36,7 @@ export default function About() {
 							</Link>
 						)}
 						<Link
-							className="btn btn-lg btn-add-note"
+							className="btn btn-lg"
 							to="/contact"
 							role="button"
 						>

@@ -1,60 +1,57 @@
 .about {
 	position: relative;
-	height: 100%;
-	width: 100%;
-	font-weight: 300;
-	margin: 0px; 
-	box-sizing: border-box; 
-}
-
-.about-container {
-	position: relative;
-	min-height: 70vh;
+	margin: 0px auto;
+	min-height: 100vh;
 	background: url('../../images/home-background.jpg');
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
+	font-weight: 300;
 	color: #ffeeee;
 	z-index: 990;
+	overflow-x: hidden;
 }
 
 .overlay {
-	height: 100%;
+	display: block;
 	width: 100%;
+	right: 0;
+	left: 0;
 	z-index: 991;
+	height: 100%;
 	background-color: rgba(0, 0, 0, 0.4);
 	position: absolute;
 }
 
 .about-content {
-	justify-self: flex-end;
+	position: relative;
 	height: 100%;
-	min-height: 300px;
-	width: 40%;
+	top: 100px;
+	width: 50%;
 	z-index: 992;
 	padding: 20px;
 }
 
 .about h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 600;
-	padding: 0px 30px;
+	padding: 0px 10px;
 }
 
 .about p {
 	font-size: 12pt;
-	padding: 0px 30px;
+	padding: 0px 10px;
 }
 
 .about-btn {
-	position: relative;
-	padding: 0px 30px;
-	padding-bottom: 20px;
+	margin: 0px;
+	padding: 10px 20px;
+	font-size: 12pt;
 }
 
 .sub-about {
@@ -66,21 +63,25 @@ Mobile screen
 ---------------------------------------------------*/
 
 @media all and (max-width: 700px) {
-	
-	.about-container {
-		min-height: 100vh;
-		justify-content: center;
-		align-items: flex-start;
+	.about {
+		align-items: center;
 	}
 	.about-content {
-		top: 200px;
-		position: relative;
-		justify-self: flex-start;
+		width: 100%;
 		text-align: center;
-		width: auto;
-		z-index: 992;
+	}
+	
+}
+
+@media all and (max-width: 400px) {
+	.about {
+		align-items: center;
+	}
+	.about-content {
+		height: 100%;
+		width: 100%;
+		text-align: center;
 		padding: 20px;
 	}
 	
-
 }

@@ -6,8 +6,8 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 100vh;
-	margin-top: 0px;
+	min-height: 100vh;
+	margin: 0px;
 }
 
 .land-container {
@@ -33,8 +33,7 @@
 	font-family: 'Viaoda';
 	font-weight: 300;
 	font-size: 1.4em;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding: 2px 40px;
 }
 .btn-c:hover {
 	background-color: #f26627;
@@ -59,12 +58,13 @@
 	border: 2px solid #f26627;
 }
 .land-intro {
-	margin-top: 5rem;
+	margin-top: 7rem;
 	font-family: 'Roboto', cursive;
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: 600;
 	text-align: center;
 	color: #efeeee;
+	padding: 0px 20px;
 }
 
 .land-paragraph{
@@ -73,8 +73,7 @@
 	font-weight: 600;
 	color:aliceblue;
 	font-family: 'Roboto', cursive;
-	margin: 20px;
-	text-transform: capitalize;
+	padding: 0px 20px;
 }
 
 .land-que {
@@ -94,5 +93,15 @@ Medium screen
 Mobile screen
 ---------------------------------------------------*/
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 700px) {
+	.land-intro {
+		margin-top: 10rem;
+		width: 100%;
+		font-size: 30px;
+	}
+
+	.land-paragraph{
+		text-align: center;
+		font-size: 1em;
+	}
 }

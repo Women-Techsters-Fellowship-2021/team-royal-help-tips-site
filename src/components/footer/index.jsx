@@ -12,23 +12,20 @@ const Footer = () => {
 				<div className="footer-links-container">
 					<h4>Thank you for visiting our website</h4>
 
-						 
-					 <div className="footer-links">
-					<ul>
-						<li>
-							<Link to="/">Home</Link>
-						</li>
-						<li>
-							<Link to="/about">About</Link>
-						</li>
-						<li>
-							<Link to="/contact">Contact</Link>
-						</li>
-					</ul>
-
+					<div className="footer-links">
+						<ul>
+							<li>
+								<Link to="/">Home</Link>
+							</li>
+							<li>
+								<Link to="/about">About</Link>
+							</li>
+							<li>
+								<Link to="/contact">Contact</Link>
+							</li>
+						</ul>
 					</div>
 				</div>
-				
 			</div>
 			<div className="underline"></div>
 			<div className="copyright">

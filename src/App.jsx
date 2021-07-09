@@ -2,9 +2,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import StateProvider from './components/StateProvider';
 import ScrollToTop from './components/ScrollToTop';
 
-// Style import
-import './css/App.css';
-
 import Notes from './pages/Notes/Notes';
 import UserNote from './pages/Notes/UserNote';
 import ContactUs from './pages/Contact/Contact';
