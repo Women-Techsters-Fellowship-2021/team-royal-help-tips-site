@@ -1,0 +1,41 @@
+.header-container {
+	position: relative;
+	top:0px;
+	min-height: 20vh;
+	width: 100%;
+	font-weight: 300;
+	background: url('../../images/header.PNG');
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	color: #efeeee;
+}
+
+.header-overlay {
+	height: 50%;
+	width: 100%;
+	z-index: 991;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+}
+
+.header-content {
+	height: 100%;
+	width: 40%;
+	z-index: 992;
+	padding: 20px;
+}
+
+.header h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+	padding: 0px 30px;
+}
+
+@media all and (max-width: 700px) {
+	.header-container {
+		top: -20px;
+	}
+}

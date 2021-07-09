@@ -1,0 +1,87 @@
+.about {
+	position: relative;
+	margin: 0px auto;
+	min-height: 100vh;
+	background: url('../../images/home-background.jpg');
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	font-weight: 300;
+	color: #ffeeee;
+	z-index: 990;
+	overflow-x: hidden;
+}
+
+.overlay {
+	display: block;
+	width: 100%;
+	right: 0;
+	left: 0;
+	z-index: 991;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+}
+
+.about-content {
+	position: relative;
+	height: 100%;
+	top: 100px;
+	width: 50%;
+	z-index: 992;
+	padding: 20px;
+}
+
+.about h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+	padding: 0px 10px;
+}
+
+.about p {
+	font-size: 12pt;
+	padding: 0px 10px;
+}
+
+.about-btn {
+	margin: 0px;
+	padding: 10px 20px;
+	font-size: 12pt;
+}
+
+.sub-about {
+	text-align: center;
+}
+
+/*------------------------------------------------
+Mobile screen
+---------------------------------------------------*/
+
+@media all and (max-width: 700px) {
+	.about {
+		align-items: center;
+	}
+	.about-content {
+		width: 100%;
+		text-align: center;
+	}
+	
+}
+
+@media all and (max-width: 400px) {
+	.about {
+		align-items: center;
+	}
+	.about-content {
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+	}
+	
+}
