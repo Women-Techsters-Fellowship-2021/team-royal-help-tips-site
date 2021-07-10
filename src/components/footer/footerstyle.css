@@ -37,7 +37,6 @@ footer{
 
 .footer-links-container ul{
     display: flex;
-    flex-flow: row wrap;
     padding: 20px;
 }
 .footer-links-container ul li{

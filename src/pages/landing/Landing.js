@@ -16,7 +16,7 @@ function Landing() {
 					<p className="land-paragraph">
 						{' '}
 						You are welcome to Team Royal Note project. Please Login
-						or register signup to get started
+						or register to get started
 					</p>
 					{!isLoggedIn && (
 						<div className="btn-container">
